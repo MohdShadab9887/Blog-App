@@ -28,8 +28,8 @@ function Paste({ myPastes, setMyPastes }) {
         value={searchPaste}
         onChange={(e) => setSearchPaste(e.target.value)}
         type="text"
-        placeholder="search blog here"
-        className="border-2 border-gray-200 w-full p-2 rounded over"
+        placeholder="Search"
+        className="border-2 border-gray-200 w-full p-2 rounded focus:outline-none focus:shadow-md overflow-y-scroll scrollbar-none"
       />
 
       <div className="rounded-t font-bold text-2xl border-2 border-gray-200 p-4 mt-2">

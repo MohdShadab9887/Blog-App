@@ -31,7 +31,7 @@ function EditPaste({ myPastes, setMyPastes }) {
       <div className="flex flex-col gap-y-5 items-start">
         <div className="w-full flex flex-row gap-x-4 justify-between items-center m-auto">
           <input
-            className="text-black border border-input rounded-md p-2  min-w-[60%] w-[100%]"
+            className="text-black border focus:outline-none focus:shadow-md rounded-md p-2  min-w-[60%] w-[100%] "
             placeholder="Title"
             type="text"
             value={title}
@@ -39,7 +39,7 @@ function EditPaste({ myPastes, setMyPastes }) {
           />
 
           <button
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700  min-w-[100px] w-[200px] mt-[7px] "
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm p-[10px] py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700  min-w-[100px] w-[200px] mt-[7px]"
             onClick={handleUpdate}
           >
             Update Blog
@@ -75,7 +75,7 @@ function EditPaste({ myPastes, setMyPastes }) {
           </div>
           <textarea
             placeholder="Enter content here..."
-            className="min-w-[100%] p-2 min-h-[400px] rounded-md border-2 text-gray-600 border-blue-600"
+            className="min-w-[100%] p-2 min-h-[300px] rounded-md focus:outline-none focus:shadow-md text-gray-600 overflow-y-scroll scrollbar-none"
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />

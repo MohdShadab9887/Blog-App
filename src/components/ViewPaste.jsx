@@ -58,7 +58,7 @@ function ViewPaste({ myPastes }) {
 
           <textarea
             placeholder="Enter content here..."
-            className="w-full p-3  focus-visible:ring-0 min-h-[400px]"
+            className="w-full p-3  focus-visible:ring-0 min-h-[300px] overflow-y-scroll scrollbar-none"
             value={arr[0].content}
             style={{
               caretColor: "#000",
