@@ -29,7 +29,7 @@ function Paste({ myPastes, setMyPastes }) {
         onChange={(e) => setSearchPaste(e.target.value)}
         type="text"
         placeholder="Search"
-        className="border-2 border-gray-200 w-full p-2 rounded focus:outline-none focus:shadow-md overflow-y-scroll scrollbar-none"
+        className="border-2 border-gray-200 w-full p-2 rounded focus:outline-none focus:shadow-md overflow-y-scroll "
       />
 
       <div className="rounded-t font-bold text-2xl border-2 border-gray-200 p-4 mt-2">
@@ -44,7 +44,7 @@ function Paste({ myPastes, setMyPastes }) {
               className="flex flex-col md:flex-row justify-between items-center"
             >
               <div className="border border-gray-200 w-full md:w-[50%] m-2 p-2 rounded">
-                <h3 className="text-2xl font-semibold">{paste.title}</h3>
+                <h3 className="text-2xl font-semibold overflow-hidden">{paste.title}</h3>
                 <p className="overflow-hidden">{paste.content}</p>
               </div>
               <div>
