@@ -15,7 +15,7 @@ function ViewPaste({ myPastes }) {
   });
 
   return (
-    <div className="w-full h-full py-10 max-w-[1200px] mx-auto px-5 lg:px-0">
+    <div className="w-full h-full py-10 max-w-[1200px] mx-auto px-5 lg:px-10">
       <div className="flex flex-col gap-y-5 items-start">
         <input
           className="w-full text-black border border-input rounded-md p-2"
